@@ -1,5 +1,5 @@
 # RNA_Structure_Visualizer
-RNA secondary structure predictor based on the Nussinov algorithm with visualization of the best predicted secondary structure.
+RNA secondary structure predictor based on the Nussinov algorithm that generates all optimal structures utilizing the Wuchty algorithm with visualization of the best predicted secondary structure.
 
 # Installation
 
