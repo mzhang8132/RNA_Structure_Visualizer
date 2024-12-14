@@ -337,10 +337,10 @@ if __name__ == "__main__":
     parser.add_argument('--seq',dest="sequence", type=str, default="AU",
                         help='RNA sequence')
     parser.add_argument('--struct',dest="structure", type=str, default = "()",
-                        help='RNA structure in dot-parenthesis notation')
+                        help='RNA structure in dot-parenthesis notation wrapped in quotes')
     parser.add_argument('--limit',dest="limit", type=int, default = 5000000,
                         help="Limit on the number of optimal solutions to return (smaller numbers run faster and won't crash due to memory usage)")
-    parser.add_argument('--vis',dest="visualize", type=bool, default = True,
+    parser.add_argument('--vis',dest="visualize", action='store_true', default = False,
                         help='Visualize the best predicted structure')
     args = parser.parse_args()
 
