@@ -309,9 +309,9 @@ def multi_nussinov(sequence, structure, limit_structures = 5000000, vis = True):
 
     print("Best predicted structure accuracy:", max_accuracy)
     print("Average predicted structure accuracy:", sum_accuracy / len(traces))
+    print("Best structure:", best_struct)
 
     if vis:
-        print("Best structure:", best_struct)
         rna_graph = parse_dot_bracket(sequence, best_struct)
         plot_rna_3d(rna_graph)
 
